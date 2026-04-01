@@ -196,9 +196,9 @@ export default function Home() {
         ) : (
           <div className="flex gap-8 overflow-x-auto pb-10 snap-x snap-mandatory pr-8 md:pr-[10%] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {latestDrops.map((product) => (
-              <Link href={`/product/${product.id}`} key={product.id} className="min-w-[300px] md:min-w-[400px] flex-shrink-0 snap-center group cursor-pointer flex flex-col">
-                <div className="w-full h-[450px] bg-zinc-100 rounded-[2rem] overflow-hidden relative mb-5 shadow-sm hover:shadow-xl transition-shadow duration-500">
-                  
+              <Link href={`/product/${product.id}`} key={product.id} className="w-[75vw] sm:w-[280px] md:w-[400px] flex-shrink-0 snap-center group cursor-pointer flex flex-col">
+                <div className="w-full h-[350px] md:h-[450px] bg-zinc-100 rounded-[1.5rem] md:rounded-[2rem] overflow-hidden relative mb-4 md:mb-5 shadow-sm hover:shadow-xl transition-shadow duration-500">
+
                   {product.original_price && product.original_price > product.price && (
                     <div className="absolute top-6 right-6 bg-[#E2FF31] text-black text-xs font-black tracking-widest px-4 py-2 rounded-full z-20 shadow-lg">
                       SALE
