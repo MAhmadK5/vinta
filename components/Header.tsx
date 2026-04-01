@@ -141,7 +141,13 @@ export default function Header() {
               <span className="font-bold uppercase tracking-widest text-sm">Subtotal</span>
             <span className="text-2xl font-black">Rs. {cartTotal}</span>
             </div>
-            <button className="w-full bg-black text-[#E2FF31] font-black uppercase tracking-widest py-4 rounded-full hover:scale-105 transition-transform shadow-lg">Checkout Fast →</button>
+            <Link 
+  href="/checkout" 
+  onClick={() => setIsCartOpen(false)} // Closes the cart sidebar so it doesn't stay open on the new page
+  className="w-full bg-[#E2FF31] text-black font-black uppercase tracking-widest py-4 rounded-xl flex justify-center items-center hover:scale-[1.02] transition-transform"
+>
+  Checkout Fast ➔
+</Link>
           </div>
         )}
       </div>
